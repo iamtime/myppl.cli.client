@@ -1,0 +1,7 @@
+# Client for Myppl.ru Rig Monitoring Tool (Cli)
+#
+# 1) Register and Login on myppl.ru
+# 2) Add new rig and get RIGKey
+# 3) npm start(or node(js) cli.js)
+# 4) Enter RIGKey
+# 5) Check myppl dashboard for monitoring
