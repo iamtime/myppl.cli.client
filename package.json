@@ -1,0 +1,16 @@
+{
+	"name": "Myppl.Cli.Client",
+	"version": "0.1.0",
+	"description": "MyPPL Rig Monitoring Cli Client",
+	"main": "cli.js",
+	"keywords": [],
+	"author": "MyPPL Team",
+	"license": "MIT",
+	"dependencies": {
+		"cli-prompt": "^0.6.0",
+		"replace": "^0.3.0",
+		"socket.io-client": "^2.0.3"
+	},"scripts": {
+		"start": "node cli.js"
+	}
+}
