@@ -102,6 +102,10 @@
 			c.on('miner_reboot', function() {
 				rebootMiner(host,port);
 			});
+			
+			c.on('show_console', function() {
+				showConsole(host,port);
+			});
 		}
 		
 	}
@@ -166,6 +170,18 @@
 		
 	}
 	
+	function showConsole(host,port){
+		request.get(
+			'http://'+host+':'+port+'/',
+			function (error, response, body) {
+				if (!error && response.statusCode == 200) {
+					$client.con.emit('rigconsole',body);
+				}else{
+					$client.con.emit('rigconsole','error');
+				}
+			}
+		);
+	}
 	
 	function restartMiner(host,port){
 		
