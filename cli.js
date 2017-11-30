@@ -6,6 +6,8 @@
 	var io = require('socket.io-client');
 	var prompt = require('cli-prompt');
 	var replace = require("replace"); 
+	var request = require('request');
+	
 	
 	var log = console.log;
 	var errtimer;
